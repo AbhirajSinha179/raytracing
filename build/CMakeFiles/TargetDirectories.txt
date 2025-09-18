@@ -1,0 +1,3 @@
+/home/abhi/projects/web/raytracing/build/CMakeFiles/raytracing_demo.dir
+/home/abhi/projects/web/raytracing/build/CMakeFiles/edit_cache.dir
+/home/abhi/projects/web/raytracing/build/CMakeFiles/rebuild_cache.dir
