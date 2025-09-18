@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/abhi/projects/web/raytracing/src/main.c" "CMakeFiles/raytracing_demo.dir/src/main.c.o" "gcc" "CMakeFiles/raytracing_demo.dir/src/main.c.o.d"
   "/home/abhi/projects/web/raytracing/src/math_utils.c" "CMakeFiles/raytracing_demo.dir/src/math_utils.c.o" "gcc" "CMakeFiles/raytracing_demo.dir/src/math_utils.c.o.d"
   "/home/abhi/projects/web/raytracing/src/scene.c" "CMakeFiles/raytracing_demo.dir/src/scene.c.o" "gcc" "CMakeFiles/raytracing_demo.dir/src/scene.c.o.d"
+  "/home/abhi/projects/web/raytracing/src/utils.c" "CMakeFiles/raytracing_demo.dir/src/utils.c.o" "gcc" "CMakeFiles/raytracing_demo.dir/src/utils.c.o.d"
   )
 
 # Targets to which this target links.

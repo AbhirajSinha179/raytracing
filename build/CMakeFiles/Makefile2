@@ -64,6 +64,8 @@ CMAKE_BINARY_DIR = /home/abhi/projects/web/raytracing/build
 
 # The main recursive "all" target.
 all: CMakeFiles/raytracing_demo.dir/all
+all: CMakeFiles/rasterization_demo.dir/all
+all: CMakeFiles/performance_comparison.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +74,8 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/raytracing_demo.dir/clean
+clean: CMakeFiles/rasterization_demo.dir/clean
+clean: CMakeFiles/performance_comparison.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,12 +85,12 @@ clean: CMakeFiles/raytracing_demo.dir/clean
 CMakeFiles/raytracing_demo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target raytracing_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=13,14,15,16,17,18 "Built target raytracing_demo"
 .PHONY : CMakeFiles/raytracing_demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/raytracing_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abhi/projects/web/raytracing/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abhi/projects/web/raytracing/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/raytracing_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/abhi/projects/web/raytracing/build/CMakeFiles 0
 .PHONY : CMakeFiles/raytracing_demo.dir/rule
@@ -99,6 +103,58 @@ raytracing_demo: CMakeFiles/raytracing_demo.dir/rule
 CMakeFiles/raytracing_demo.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/clean
 .PHONY : CMakeFiles/raytracing_demo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/rasterization_demo.dir
+
+# All Build rule for target.
+CMakeFiles/rasterization_demo.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target rasterization_demo"
+.PHONY : CMakeFiles/rasterization_demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/rasterization_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abhi/projects/web/raytracing/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rasterization_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abhi/projects/web/raytracing/build/CMakeFiles 0
+.PHONY : CMakeFiles/rasterization_demo.dir/rule
+
+# Convenience name for target.
+rasterization_demo: CMakeFiles/rasterization_demo.dir/rule
+.PHONY : rasterization_demo
+
+# clean rule for target.
+CMakeFiles/rasterization_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/clean
+.PHONY : CMakeFiles/rasterization_demo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/performance_comparison.dir
+
+# All Build rule for target.
+CMakeFiles/performance_comparison.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target performance_comparison"
+.PHONY : CMakeFiles/performance_comparison.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/performance_comparison.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abhi/projects/web/raytracing/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/performance_comparison.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abhi/projects/web/raytracing/build/CMakeFiles 0
+.PHONY : CMakeFiles/performance_comparison.dir/rule
+
+# Convenience name for target.
+performance_comparison: CMakeFiles/performance_comparison.dir/rule
+.PHONY : performance_comparison
+
+# clean rule for target.
+CMakeFiles/performance_comparison.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/clean
+.PHONY : CMakeFiles/performance_comparison.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

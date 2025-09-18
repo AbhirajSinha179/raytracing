@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -O2 CMakeFiles/performance_comparison.dir/examples/performance_comparison.c.o CMakeFiles/performance_comparison.dir/src/lighting.c.o CMakeFiles/performance_comparison.dir/src/math_utils.c.o CMakeFiles/performance_comparison.dir/src/scene.c.o CMakeFiles/performance_comparison.dir/src/utils.c.o -o bin/performance_comparison  -lSDL2 -lm 

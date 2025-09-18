@@ -69,24 +69,10 @@ include CMakeFiles/raytracing_demo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/raytracing_demo.dir/flags.make
 
-CMakeFiles/raytracing_demo.dir/src/lighting.c.o: CMakeFiles/raytracing_demo.dir/flags.make
-CMakeFiles/raytracing_demo.dir/src/lighting.c.o: ../src/lighting.c
-CMakeFiles/raytracing_demo.dir/src/lighting.c.o: CMakeFiles/raytracing_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/raytracing_demo.dir/src/lighting.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/raytracing_demo.dir/src/lighting.c.o -MF CMakeFiles/raytracing_demo.dir/src/lighting.c.o.d -o CMakeFiles/raytracing_demo.dir/src/lighting.c.o -c /home/abhi/projects/web/raytracing/src/lighting.c
-
-CMakeFiles/raytracing_demo.dir/src/lighting.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/raytracing_demo.dir/src/lighting.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abhi/projects/web/raytracing/src/lighting.c > CMakeFiles/raytracing_demo.dir/src/lighting.c.i
-
-CMakeFiles/raytracing_demo.dir/src/lighting.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/raytracing_demo.dir/src/lighting.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abhi/projects/web/raytracing/src/lighting.c -o CMakeFiles/raytracing_demo.dir/src/lighting.c.s
-
 CMakeFiles/raytracing_demo.dir/src/main.c.o: CMakeFiles/raytracing_demo.dir/flags.make
 CMakeFiles/raytracing_demo.dir/src/main.c.o: ../src/main.c
 CMakeFiles/raytracing_demo.dir/src/main.c.o: CMakeFiles/raytracing_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/raytracing_demo.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/raytracing_demo.dir/src/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/raytracing_demo.dir/src/main.c.o -MF CMakeFiles/raytracing_demo.dir/src/main.c.o.d -o CMakeFiles/raytracing_demo.dir/src/main.c.o -c /home/abhi/projects/web/raytracing/src/main.c
 
 CMakeFiles/raytracing_demo.dir/src/main.c.i: cmake_force
@@ -96,6 +82,20 @@ CMakeFiles/raytracing_demo.dir/src/main.c.i: cmake_force
 CMakeFiles/raytracing_demo.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/raytracing_demo.dir/src/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abhi/projects/web/raytracing/src/main.c -o CMakeFiles/raytracing_demo.dir/src/main.c.s
+
+CMakeFiles/raytracing_demo.dir/src/lighting.c.o: CMakeFiles/raytracing_demo.dir/flags.make
+CMakeFiles/raytracing_demo.dir/src/lighting.c.o: ../src/lighting.c
+CMakeFiles/raytracing_demo.dir/src/lighting.c.o: CMakeFiles/raytracing_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/raytracing_demo.dir/src/lighting.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/raytracing_demo.dir/src/lighting.c.o -MF CMakeFiles/raytracing_demo.dir/src/lighting.c.o.d -o CMakeFiles/raytracing_demo.dir/src/lighting.c.o -c /home/abhi/projects/web/raytracing/src/lighting.c
+
+CMakeFiles/raytracing_demo.dir/src/lighting.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/raytracing_demo.dir/src/lighting.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abhi/projects/web/raytracing/src/lighting.c > CMakeFiles/raytracing_demo.dir/src/lighting.c.i
+
+CMakeFiles/raytracing_demo.dir/src/lighting.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/raytracing_demo.dir/src/lighting.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abhi/projects/web/raytracing/src/lighting.c -o CMakeFiles/raytracing_demo.dir/src/lighting.c.s
 
 CMakeFiles/raytracing_demo.dir/src/math_utils.c.o: CMakeFiles/raytracing_demo.dir/flags.make
 CMakeFiles/raytracing_demo.dir/src/math_utils.c.o: ../src/math_utils.c
@@ -125,23 +125,39 @@ CMakeFiles/raytracing_demo.dir/src/scene.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/raytracing_demo.dir/src/scene.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abhi/projects/web/raytracing/src/scene.c -o CMakeFiles/raytracing_demo.dir/src/scene.c.s
 
+CMakeFiles/raytracing_demo.dir/src/utils.c.o: CMakeFiles/raytracing_demo.dir/flags.make
+CMakeFiles/raytracing_demo.dir/src/utils.c.o: ../src/utils.c
+CMakeFiles/raytracing_demo.dir/src/utils.c.o: CMakeFiles/raytracing_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/raytracing_demo.dir/src/utils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/raytracing_demo.dir/src/utils.c.o -MF CMakeFiles/raytracing_demo.dir/src/utils.c.o.d -o CMakeFiles/raytracing_demo.dir/src/utils.c.o -c /home/abhi/projects/web/raytracing/src/utils.c
+
+CMakeFiles/raytracing_demo.dir/src/utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/raytracing_demo.dir/src/utils.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abhi/projects/web/raytracing/src/utils.c > CMakeFiles/raytracing_demo.dir/src/utils.c.i
+
+CMakeFiles/raytracing_demo.dir/src/utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/raytracing_demo.dir/src/utils.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abhi/projects/web/raytracing/src/utils.c -o CMakeFiles/raytracing_demo.dir/src/utils.c.s
+
 # Object files for target raytracing_demo
 raytracing_demo_OBJECTS = \
-"CMakeFiles/raytracing_demo.dir/src/lighting.c.o" \
 "CMakeFiles/raytracing_demo.dir/src/main.c.o" \
+"CMakeFiles/raytracing_demo.dir/src/lighting.c.o" \
 "CMakeFiles/raytracing_demo.dir/src/math_utils.c.o" \
-"CMakeFiles/raytracing_demo.dir/src/scene.c.o"
+"CMakeFiles/raytracing_demo.dir/src/scene.c.o" \
+"CMakeFiles/raytracing_demo.dir/src/utils.c.o"
 
 # External object files for target raytracing_demo
 raytracing_demo_EXTERNAL_OBJECTS =
 
-bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/src/lighting.c.o
 bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/src/main.c.o
+bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/src/lighting.c.o
 bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/src/math_utils.c.o
 bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/src/scene.c.o
+bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/src/utils.c.o
 bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/build.make
 bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable bin/raytracing_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable bin/raytracing_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/raytracing_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

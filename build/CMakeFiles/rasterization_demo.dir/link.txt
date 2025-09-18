@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -O2 CMakeFiles/rasterization_demo.dir/examples/rasterization_example.c.o CMakeFiles/rasterization_demo.dir/src/lighting.c.o CMakeFiles/rasterization_demo.dir/src/math_utils.c.o CMakeFiles/rasterization_demo.dir/src/scene.c.o CMakeFiles/rasterization_demo.dir/src/utils.c.o -o bin/rasterization_demo  -lSDL2 -lm 

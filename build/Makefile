@@ -129,12 +129,88 @@ raytracing_demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/build
 .PHONY : raytracing_demo/fast
 
+#=============================================================================
+# Target rules for targets named rasterization_demo
+
+# Build rule for target.
+rasterization_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rasterization_demo
+.PHONY : rasterization_demo
+
+# fast build rule for target.
+rasterization_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/build
+.PHONY : rasterization_demo/fast
+
+#=============================================================================
+# Target rules for targets named performance_comparison
+
+# Build rule for target.
+performance_comparison: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 performance_comparison
+.PHONY : performance_comparison
+
+# fast build rule for target.
+performance_comparison/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/build
+.PHONY : performance_comparison/fast
+
+examples/performance_comparison.o: examples/performance_comparison.c.o
+.PHONY : examples/performance_comparison.o
+
+# target to build an object file
+examples/performance_comparison.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/examples/performance_comparison.c.o
+.PHONY : examples/performance_comparison.c.o
+
+examples/performance_comparison.i: examples/performance_comparison.c.i
+.PHONY : examples/performance_comparison.i
+
+# target to preprocess a source file
+examples/performance_comparison.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/examples/performance_comparison.c.i
+.PHONY : examples/performance_comparison.c.i
+
+examples/performance_comparison.s: examples/performance_comparison.c.s
+.PHONY : examples/performance_comparison.s
+
+# target to generate assembly for a file
+examples/performance_comparison.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/examples/performance_comparison.c.s
+.PHONY : examples/performance_comparison.c.s
+
+examples/rasterization_example.o: examples/rasterization_example.c.o
+.PHONY : examples/rasterization_example.o
+
+# target to build an object file
+examples/rasterization_example.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/examples/rasterization_example.c.o
+.PHONY : examples/rasterization_example.c.o
+
+examples/rasterization_example.i: examples/rasterization_example.c.i
+.PHONY : examples/rasterization_example.i
+
+# target to preprocess a source file
+examples/rasterization_example.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/examples/rasterization_example.c.i
+.PHONY : examples/rasterization_example.c.i
+
+examples/rasterization_example.s: examples/rasterization_example.c.s
+.PHONY : examples/rasterization_example.s
+
+# target to generate assembly for a file
+examples/rasterization_example.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/examples/rasterization_example.c.s
+.PHONY : examples/rasterization_example.c.s
+
 src/lighting.o: src/lighting.c.o
 .PHONY : src/lighting.o
 
 # target to build an object file
 src/lighting.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/lighting.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/lighting.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/lighting.c.o
 .PHONY : src/lighting.c.o
 
 src/lighting.i: src/lighting.c.i
@@ -143,6 +219,8 @@ src/lighting.i: src/lighting.c.i
 # target to preprocess a source file
 src/lighting.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/lighting.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/lighting.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/lighting.c.i
 .PHONY : src/lighting.c.i
 
 src/lighting.s: src/lighting.c.s
@@ -151,6 +229,8 @@ src/lighting.s: src/lighting.c.s
 # target to generate assembly for a file
 src/lighting.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/lighting.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/lighting.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/lighting.c.s
 .PHONY : src/lighting.c.s
 
 src/main.o: src/main.c.o
@@ -183,6 +263,8 @@ src/math_utils.o: src/math_utils.c.o
 # target to build an object file
 src/math_utils.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/math_utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/math_utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/math_utils.c.o
 .PHONY : src/math_utils.c.o
 
 src/math_utils.i: src/math_utils.c.i
@@ -191,6 +273,8 @@ src/math_utils.i: src/math_utils.c.i
 # target to preprocess a source file
 src/math_utils.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/math_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/math_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/math_utils.c.i
 .PHONY : src/math_utils.c.i
 
 src/math_utils.s: src/math_utils.c.s
@@ -199,6 +283,8 @@ src/math_utils.s: src/math_utils.c.s
 # target to generate assembly for a file
 src/math_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/math_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/math_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/math_utils.c.s
 .PHONY : src/math_utils.c.s
 
 src/scene.o: src/scene.c.o
@@ -207,6 +293,8 @@ src/scene.o: src/scene.c.o
 # target to build an object file
 src/scene.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/scene.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/scene.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/scene.c.o
 .PHONY : src/scene.c.o
 
 src/scene.i: src/scene.c.i
@@ -215,6 +303,8 @@ src/scene.i: src/scene.c.i
 # target to preprocess a source file
 src/scene.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/scene.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/scene.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/scene.c.i
 .PHONY : src/scene.c.i
 
 src/scene.s: src/scene.c.s
@@ -223,7 +313,39 @@ src/scene.s: src/scene.c.s
 # target to generate assembly for a file
 src/scene.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/scene.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/scene.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/scene.c.s
 .PHONY : src/scene.c.s
+
+src/utils.o: src/utils.c.o
+.PHONY : src/utils.o
+
+# target to build an object file
+src/utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/utils.c.o
+.PHONY : src/utils.c.o
+
+src/utils.i: src/utils.c.i
+.PHONY : src/utils.i
+
+# target to preprocess a source file
+src/utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/utils.c.i
+.PHONY : src/utils.c.i
+
+src/utils.s: src/utils.c.s
+.PHONY : src/utils.s
+
+# target to generate assembly for a file
+src/utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/utils.c.s
+.PHONY : src/utils.c.s
 
 # Help Target
 help:
@@ -233,7 +355,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... performance_comparison"
+	@echo "... rasterization_demo"
 	@echo "... raytracing_demo"
+	@echo "... examples/performance_comparison.o"
+	@echo "... examples/performance_comparison.i"
+	@echo "... examples/performance_comparison.s"
+	@echo "... examples/rasterization_example.o"
+	@echo "... examples/rasterization_example.i"
+	@echo "... examples/rasterization_example.s"
 	@echo "... src/lighting.o"
 	@echo "... src/lighting.i"
 	@echo "... src/lighting.s"
@@ -246,6 +376,9 @@ help:
 	@echo "... src/scene.o"
 	@echo "... src/scene.i"
 	@echo "... src/scene.s"
+	@echo "... src/utils.o"
+	@echo "... src/utils.i"
+	@echo "... src/utils.s"
 .PHONY : help
 
 

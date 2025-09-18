@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/raytracing_demo.dir/src/math_utils.c.o.d"
   "CMakeFiles/raytracing_demo.dir/src/scene.c.o"
   "CMakeFiles/raytracing_demo.dir/src/scene.c.o.d"
+  "CMakeFiles/raytracing_demo.dir/src/utils.c.o"
+  "CMakeFiles/raytracing_demo.dir/src/utils.c.o.d"
   "bin/raytracing_demo"
   "bin/raytracing_demo.pdb"
 )

@@ -1,1 +1,1 @@
-/usr/bin/cc  -Wall -Wextra -O2 CMakeFiles/raytracing_demo.dir/src/lighting.c.o CMakeFiles/raytracing_demo.dir/src/main.c.o CMakeFiles/raytracing_demo.dir/src/math_utils.c.o CMakeFiles/raytracing_demo.dir/src/scene.c.o -o bin/raytracing_demo  -lSDL2 -lm 
+/usr/bin/cc  -Wall -Wextra -O2 CMakeFiles/raytracing_demo.dir/src/main.c.o CMakeFiles/raytracing_demo.dir/src/lighting.c.o CMakeFiles/raytracing_demo.dir/src/math_utils.c.o CMakeFiles/raytracing_demo.dir/src/scene.c.o CMakeFiles/raytracing_demo.dir/src/utils.c.o -o bin/raytracing_demo  -lSDL2 -lm 
