@@ -74,25 +74,6 @@ Based on 800x600 resolution benchmarks:
 -   **Space**: Reset light position
 -   **ESC**: Exit
 
-## 🎓 Educational Value
-
-This project demonstrates mastery of:
-
--   **Computer Graphics Theory**: Ray tracing, lighting models, 3D mathematics
--   **Algorithm Implementation**: Intersection testing, recursive ray bouncing
--   **Performance Optimization**: Benchmarking and complexity analysis
--   **Software Engineering**: Modular design, build systems, documentation
--   **Mathematical Programming**: Vector operations, geometric calculations
-
-## 💼 Portfolio Showcase
-
-Perfect for demonstrating:
-
--   **Graphics Programming Skills** to potential employers
--   **Mathematical Problem-Solving** abilities
--   **Software Architecture** and engineering practices
--   **Performance Analysis** and optimization techniques
--   **Technical Documentation** and communication skills
 
 ---
 
