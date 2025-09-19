@@ -203,6 +203,30 @@ examples/rasterization_example.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/examples/rasterization_example.c.s
 .PHONY : examples/rasterization_example.c.s
 
+examples/raytracing_demo.o: examples/raytracing_demo.c.o
+.PHONY : examples/raytracing_demo.o
+
+# target to build an object file
+examples/raytracing_demo.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o
+.PHONY : examples/raytracing_demo.c.o
+
+examples/raytracing_demo.i: examples/raytracing_demo.c.i
+.PHONY : examples/raytracing_demo.i
+
+# target to preprocess a source file
+examples/raytracing_demo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.i
+.PHONY : examples/raytracing_demo.c.i
+
+examples/raytracing_demo.s: examples/raytracing_demo.c.s
+.PHONY : examples/raytracing_demo.s
+
+# target to generate assembly for a file
+examples/raytracing_demo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.s
+.PHONY : examples/raytracing_demo.c.s
+
 src/lighting.o: src/lighting.c.o
 .PHONY : src/lighting.o
 
@@ -232,30 +256,6 @@ src/lighting.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rasterization_demo.dir/build.make CMakeFiles/rasterization_demo.dir/src/lighting.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance_comparison.dir/build.make CMakeFiles/performance_comparison.dir/src/lighting.c.s
 .PHONY : src/lighting.c.s
-
-src/main.o: src/main.c.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/main.c.o
-.PHONY : src/main.c.o
-
-src/main.i: src/main.c.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/main.c.i
-.PHONY : src/main.c.i
-
-src/main.s: src/main.c.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracing_demo.dir/build.make CMakeFiles/raytracing_demo.dir/src/main.c.s
-.PHONY : src/main.c.s
 
 src/math_utils.o: src/math_utils.c.o
 .PHONY : src/math_utils.o
@@ -364,12 +364,12 @@ help:
 	@echo "... examples/rasterization_example.o"
 	@echo "... examples/rasterization_example.i"
 	@echo "... examples/rasterization_example.s"
+	@echo "... examples/raytracing_demo.o"
+	@echo "... examples/raytracing_demo.i"
+	@echo "... examples/raytracing_demo.s"
 	@echo "... src/lighting.o"
 	@echo "... src/lighting.i"
 	@echo "... src/lighting.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 	@echo "... src/math_utils.o"
 	@echo "... src/math_utils.i"
 	@echo "... src/math_utils.s"

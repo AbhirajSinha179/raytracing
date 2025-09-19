@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o"
+  "CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o.d"
   "CMakeFiles/raytracing_demo.dir/src/lighting.c.o"
   "CMakeFiles/raytracing_demo.dir/src/lighting.c.o.d"
-  "CMakeFiles/raytracing_demo.dir/src/main.c.o"
-  "CMakeFiles/raytracing_demo.dir/src/main.c.o.d"
   "CMakeFiles/raytracing_demo.dir/src/math_utils.c.o"
   "CMakeFiles/raytracing_demo.dir/src/math_utils.c.o.d"
   "CMakeFiles/raytracing_demo.dir/src/scene.c.o"

@@ -1,6 +1,10 @@
 #include "raytracing.h"
 #include <stdlib.h>
 
+#define MIN_REFLECTION_CONTRIBUTION 0.05f // no reflections below 5% contrib
+#define MAX_RAY_DISTANCE 50.0f // no rays beyond this dist
+#define MIN_LIGHT_CONTRIBUTION 0.01F // skip lights with minimal contribution
+
 // Sphere intersection using ray-sphere intersection formula
 bool sphere_intersect(Sphere sphere, Ray ray, HitInfo *hit_info)
 {
@@ -120,7 +124,7 @@ Color trace_ray(Ray ray, Scene *scene, RenderSettings *settings, int depth)
         }
     }
 
-    if (!closest_hit.hit)
+    if (!closest_hit.hit && closest_hit.distance > MAX_RAY_DISTANCE)
     {
         return scene->background;
     }
@@ -136,8 +140,13 @@ Color trace_ray(Ray ray, Scene *scene, RenderSettings *settings, int depth)
 
         if (!in_shadow)
         {
-            Vector3 light_dir = vector3_normalize(vector3_sub(scene->lights[i].position, closest_hit.point));
-
+            Vector3 light_vector = vector3_sub(scene->lights[i].position, closest_hit.point);
+            float light_distance = vector3_length(light_vector);
+            
+            if (light_distance > MAX_RAY_DISTANCE || scene->lights[i].intensity < MIN_LIGHT_CONTRIBUTION)
+            continue; // Skip lights that are too far or too weak
+            
+            Vector3 light_dir = vector3_normalize(light_vector);
             // Diffuse lighting
             float n_dot_l = fmaxf(0.0f, vector3_dot(closest_hit.normal, light_dir));
             Color diffuse = color_scale(
@@ -161,8 +170,12 @@ Color trace_ray(Ray ray, Scene *scene, RenderSettings *settings, int depth)
     result = color_add(result, ambient);
 
     // Add reflections
-    if (settings->enable_reflections && closest_hit.material.specular > 0.0f)
+    if (settings->enable_reflections && closest_hit.material.specular > MIN_REFLECTION_CONTRIBUTION)
     {
+        float reflection_contribution = closest_hit.material.specular * settings->reflection_strength;
+        if (reflection_contribution < MIN_REFLECTION_CONTRIBUTION)
+            return result; // Skip negligible reflections
+
         Vector3 reflect_dir = vector3_reflect(ray.direction, closest_hit.normal);
         Ray reflect_ray;
         reflect_ray.origin = vector3_add(closest_hit.point, vector3_scale(closest_hit.normal, EPSILON));

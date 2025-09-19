@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/abhi/projects/web/raytracing/examples/raytracing_demo.c" "CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o" "gcc" "CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o.d"
   "/home/abhi/projects/web/raytracing/src/lighting.c" "CMakeFiles/raytracing_demo.dir/src/lighting.c.o" "gcc" "CMakeFiles/raytracing_demo.dir/src/lighting.c.o.d"
-  "/home/abhi/projects/web/raytracing/src/main.c" "CMakeFiles/raytracing_demo.dir/src/main.c.o" "gcc" "CMakeFiles/raytracing_demo.dir/src/main.c.o.d"
   "/home/abhi/projects/web/raytracing/src/math_utils.c" "CMakeFiles/raytracing_demo.dir/src/math_utils.c.o" "gcc" "CMakeFiles/raytracing_demo.dir/src/math_utils.c.o.d"
   "/home/abhi/projects/web/raytracing/src/scene.c" "CMakeFiles/raytracing_demo.dir/src/scene.c.o" "gcc" "CMakeFiles/raytracing_demo.dir/src/scene.c.o.d"
   "/home/abhi/projects/web/raytracing/src/utils.c" "CMakeFiles/raytracing_demo.dir/src/utils.c.o" "gcc" "CMakeFiles/raytracing_demo.dir/src/utils.c.o.d"

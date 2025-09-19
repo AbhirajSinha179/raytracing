@@ -25,7 +25,7 @@ set(LIBRARY_SOURCES
 )
 
 # Create main raytracing demo
-add_executable(raytracing_demo src/main.c ${LIBRARY_SOURCES})
+add_executable(raytracing_demo examples/raytracing_demo.c ${LIBRARY_SOURCES})
 target_link_libraries(raytracing_demo ${SDL2_LIBRARIES} m)
 
 # Create rasterization demo

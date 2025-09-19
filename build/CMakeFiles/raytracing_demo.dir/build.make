@@ -69,19 +69,19 @@ include CMakeFiles/raytracing_demo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/raytracing_demo.dir/flags.make
 
-CMakeFiles/raytracing_demo.dir/src/main.c.o: CMakeFiles/raytracing_demo.dir/flags.make
-CMakeFiles/raytracing_demo.dir/src/main.c.o: ../src/main.c
-CMakeFiles/raytracing_demo.dir/src/main.c.o: CMakeFiles/raytracing_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/raytracing_demo.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/raytracing_demo.dir/src/main.c.o -MF CMakeFiles/raytracing_demo.dir/src/main.c.o.d -o CMakeFiles/raytracing_demo.dir/src/main.c.o -c /home/abhi/projects/web/raytracing/src/main.c
+CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o: CMakeFiles/raytracing_demo.dir/flags.make
+CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o: ../examples/raytracing_demo.c
+CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o: CMakeFiles/raytracing_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abhi/projects/web/raytracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o -MF CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o.d -o CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o -c /home/abhi/projects/web/raytracing/examples/raytracing_demo.c
 
-CMakeFiles/raytracing_demo.dir/src/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/raytracing_demo.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abhi/projects/web/raytracing/src/main.c > CMakeFiles/raytracing_demo.dir/src/main.c.i
+CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abhi/projects/web/raytracing/examples/raytracing_demo.c > CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.i
 
-CMakeFiles/raytracing_demo.dir/src/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/raytracing_demo.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abhi/projects/web/raytracing/src/main.c -o CMakeFiles/raytracing_demo.dir/src/main.c.s
+CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abhi/projects/web/raytracing/examples/raytracing_demo.c -o CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.s
 
 CMakeFiles/raytracing_demo.dir/src/lighting.c.o: CMakeFiles/raytracing_demo.dir/flags.make
 CMakeFiles/raytracing_demo.dir/src/lighting.c.o: ../src/lighting.c
@@ -141,7 +141,7 @@ CMakeFiles/raytracing_demo.dir/src/utils.c.s: cmake_force
 
 # Object files for target raytracing_demo
 raytracing_demo_OBJECTS = \
-"CMakeFiles/raytracing_demo.dir/src/main.c.o" \
+"CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o" \
 "CMakeFiles/raytracing_demo.dir/src/lighting.c.o" \
 "CMakeFiles/raytracing_demo.dir/src/math_utils.c.o" \
 "CMakeFiles/raytracing_demo.dir/src/scene.c.o" \
@@ -150,7 +150,7 @@ raytracing_demo_OBJECTS = \
 # External object files for target raytracing_demo
 raytracing_demo_EXTERNAL_OBJECTS =
 
-bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/src/main.c.o
+bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/examples/raytracing_demo.c.o
 bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/src/lighting.c.o
 bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/src/math_utils.c.o
 bin/raytracing_demo: CMakeFiles/raytracing_demo.dir/src/scene.c.o
